@@ -8,6 +8,7 @@ from ranking_sector import ranking_sector
 from horas_liquidadas import generar_horas_liquidadas
 from estadisticas import generar_estadisticas
 from log import escribir_log
+from reportes_texto import generar_reportes_texto
 
 
 def main():
@@ -75,6 +76,7 @@ def main():
                     ranking_sector()
                     generar_horas_liquidadas()
                     generar_estadisticas(dic)
+                    generar_reportes_texto()
                     escribir_log("Reportes generados correctamente")
                     print("Reportes generados con éxito.")
                 except Exception as e:
