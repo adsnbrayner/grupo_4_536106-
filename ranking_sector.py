@@ -1,9 +1,9 @@
 def ranking_sector():
     try:
-        pf = open("ranking.csv", "rt", encoding="utf-8")
+        pf = open("ranking_empleado.csv", "rt", encoding="utf-8")
         pf2 = open("ranking_sector.csv", "wt", encoding="utf-8")
     except IOError:
-        print("No se pudo crear el archivo ranking_sector.csv o abrir ranking.csv")
+        print("No se pudo crear el archivo ranking_sector.csv o abrir ranking_empleado.csv")
     else:
         sector_dict = {}
         total_general_horas = 0
